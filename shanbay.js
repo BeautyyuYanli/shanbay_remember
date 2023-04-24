@@ -137,7 +137,7 @@ async function getAndSendResult(materialbookId, wordsType) {
 
 async function main() {
   const materialbookId = await api.getDefaultMaterialBookIdApi()
-  await getAndSendResult(materialbookId, api.WORDS_TYPE.NEW); // new words
+  // await getAndSendResult(materialbookId, api.WORDS_TYPE.NEW); // new words
   await getAndSendResult(materialbookId, api.WORDS_TYPE.REVIEW); // old words
 }
 
